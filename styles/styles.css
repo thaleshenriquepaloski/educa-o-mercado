@@ -1,0 +1,178 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o corpo da página */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #2ecc71; /* Verde claro */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilos para a barra de navegação */
+nav {
+    background-color: #27ae60; /* Cor de fundo */
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 3px solid #2ecc71; /* Adicionando uma borda na parte inferior */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li:not(:last-child) {
+    margin-right: 20px; /* Adicionando margem apenas entre os itens, exceto o último */
+}
+
+nav ul li a {
+    color: #fff; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    padding: 10px 15px; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+}
+
+nav ul li a:hover {
+    background-color: #2ecc71; /* Altera a cor de fundo ao passar o mouse */
+}
+
+
+/* Estilos para o conteúdo principal */
+main {
+    padding: 20px;
+}
+
+/* Estilos para as seções de cursos */
+.curso {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    overflow: hidden;
+    background-color: #e5f5e0; /* Cor de fundo mais intensa */
+}
+
+.curso img {
+    float: left;
+    margin-right: 20px;
+    max-width: 200px; /* Largura máxima das imagens */
+}
+
+.curso h3 {
+    margin-top: 0;
+    font-size: 24px; 
+}
+
+.curso p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.curso a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #2ecc71;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.curso a:hover {
+    background-color: #27ae60;
+}
+
+.comprar {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Estilos para a seção de introdução */
+#introdução {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+#introdução p {
+    margin-bottom: 20px;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #ccc;
+}
+footer {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: bottom;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos responsivos */
+@media only screen and (max-width: 600px) {
+    /* Modifique os estilos conforme necessário para telas pequenas */
+    header {
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .curso img {
+        max-width: 100%; /* Para imagens ocuparem toda a largura em telas menores */
+        float: none; /* Removendo o float para centralizar as imagens */
+        margin-right: 0;
+        margin-bottom: 10px; /* Espaçamento inferior entre as imagens */
+    }
+}
